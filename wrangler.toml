@@ -8,8 +8,8 @@ compatibility_flags = ["nodejs_compat"]
 [[d1_databases]]
 binding = "DB"
 database_name = "pulsaku"
-database_id = "GANTI_DENGAN_DATABASE_ID"
+database_id = "96fa789c-d71e-415b-acc1-cbe4ae14f519"
 
 [vars]
 # ID Telegram admin, pisahkan dengan koma. Contoh: "5359680210,123456"
-ADMIN_IDS = ""
+ADMIN_IDS = "5359680210"
