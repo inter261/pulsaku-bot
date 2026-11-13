@@ -1,0 +1,22 @@
+{
+  "name": "pulsaku-bot",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy",
+    "typecheck": "tsc --noEmit",
+    "db:init": "wrangler d1 execute pulsaku --remote --file=schema.sql",
+    "db:init:local": "wrangler d1 execute pulsaku --local --file=schema.sql",
+    "webhook": "node scripts/set-webhook.mjs"
+  },
+  "dependencies": {
+    "grammy": "^1.30.0"
+  },
+  "devDependencies": {
+    "@cloudflare/workers-types": "^4.20241112.0",
+    "typescript": "^5.6.0",
+    "wrangler": "^3.90.0"
+  }
+}
